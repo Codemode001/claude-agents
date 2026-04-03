@@ -43,9 +43,12 @@ Or if you've cloned the repo:
 |---|---|---|
 | **bug-surgeon** | Diagnoses and surgically fixes bugs with minimal footprint — traces the error, forms a hypothesis, applies the smallest correct change. | `"there's a bug in X"`, `"fix this"`, `"getting this error"`, `"why is this failing"` |
 | **code-explainer** | Explains what code does at two levels: a plain-English summary and a detailed step-by-step walkthrough. | `"explain this"`, `"what does X do"`, `"how does this work"`, `"walk me through this"` |
+| **code-reviewer** | Reviews your own uncommitted or unpushed changes before they go up — catches bugs, security gaps, convention violations, and missing tests. | `"review my code before I push"`, `"check my changes"`, `"is my code ready?"`, `"any issues before I push?"` |
 | **codebase-explorer** | Maps an unfamiliar codebase and produces a structured onboarding document covering architecture, key files, and data flow. | `"explore this project"`, `"what does this repo do"`, `"help me get oriented"`, `"I haven't worked on this in months"` |
+| **pr-reviewer** | Reviews a teammate's pull request and gives a clear merge recommendation — focused on correctness, safety, and impact on existing features. | `"review this PR"`, `"is this safe to merge?"`, `"will this break anything?"`, `"review my teammate's changes"` |
 | **refactor-planner** | Produces a safe, sequenced refactor plan without touching any code — reads the module, its callers, and project conventions first. | `"plan a refactor"`, `"this module is a mess"`, `"how should I clean this up"`, `"how would you restructure this"` |
 | **standup-writer** | Pulls your recent git commits, groups them into themes, and writes a paste-ready standup update. | `"write my standup"`, `"what did I do today"`, `"summarize yesterday"`, `"daily update"` |
+| **test-writer** | Writes a complete test suite for a function, module, or feature — discovers your existing test framework and conventions before writing a single line. | `"write tests for this"`, `"add tests to X"`, `"this has no tests"`, `"cover this with tests"` |
 | **ticket-planner** | Turns a ticket, user story, or feature request into a concrete technical implementation plan grounded in your actual codebase. | `"how should I build this"`, `"break this down"`, `"spec this out"`, `"what's the approach for this"` |
 
 ---

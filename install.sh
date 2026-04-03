@@ -4,7 +4,7 @@ set -euo pipefail
 
 INSTALL_DIR="$HOME/.claude/agents"
 REPO_RAW="https://raw.githubusercontent.com/Codemode001/claude-agents/main/agents"
-ALL_AGENTS=(bug-surgeon code-explainer codebase-explorer refactor-planner standup-writer ticket-planner)
+ALL_AGENTS=(bug-surgeon code-reviewer code-explainer codebase-explorer pr-reviewer refactor-planner standup-writer test-writer ticket-planner)
 
 # Detect whether we're running from a local clone or piped via curl
 if [[ -n "${BASH_SOURCE[0]:-}" ]] && [[ -f "${BASH_SOURCE[0]}" ]]; then
