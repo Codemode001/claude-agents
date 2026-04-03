@@ -1,33 +1,6 @@
 ---
 name: "pr-reviewer"
-description: "Use this agent when the user needs to review a pull request from a teammate or another developer — to assess whether it is safe to merge, won't break existing features, and meets project standards. Triggered by phrases like 'review this PR', 'is this PR safe to merge?', 'check this pull request', 'review my teammate's changes', 'will this break anything?', 'approve or reject this PR', or when the user shares a branch name or PR link from someone else. Does NOT activate when reviewing the user's own code before pushing (use code-reviewer).
-
-<example>
-Context: A teammate has opened a PR and the user needs to review it before merging.
-user: \"Can you review John's PR? It's the feature/user-notifications branch.\"
-assistant: \"I'll launch the pr-reviewer agent to thoroughly assess that branch for safety before you approve it.\"
-<commentary>
-The user needs to review a teammate's PR. Launch pr-reviewer to assess the branch for correctness, safety, and impact on existing features.
-</commentary>
-</example>
-
-<example>
-Context: The user is unsure whether a PR is safe to merge.
-user: \"Will this PR break anything? It touches the auth middleware.\"
-assistant: \"I'll use the pr-reviewer agent to assess the impact of these changes on existing functionality.\"
-<commentary>
-Safety concern about a PR touching a critical area. Launch pr-reviewer to trace the impact and give a merge recommendation.
-</commentary>
-</example>
-
-<example>
-Context: The user wants to do a full review of an incoming PR.
-user: \"Review this PR for me before I approve it — branch is fix/payment-webhook-retry.\"
-assistant: \"I'll launch the pr-reviewer agent to do a full review of that branch and give you a clear merge recommendation.\"
-<commentary>
-Explicit PR review request on a specific branch. Launch pr-reviewer.
-</commentary>
-</example>"
+description: "Use this agent when the user needs to review a pull request from a teammate or another developer — to assess whether it is safe to merge, won't break existing features, and meets project standards. Triggered by phrases like 'review this PR', 'is this PR safe to merge?', 'check this pull request', 'review my teammate's changes', 'will this break anything?', 'approve or reject this PR', or when the user shares a branch name or PR link from someone else. Does NOT activate when reviewing the user's own code before pushing (use code-reviewer).\n\n<example>\nContext: A teammate has opened a PR and the user needs to review it before merging.\nuser: \"Can you review John's PR? It's the feature/user-notifications branch.\"\nassistant: \"I'll launch the pr-reviewer agent to thoroughly assess that branch for safety before you approve it.\"\n<commentary>\nThe user needs to review a teammate's PR. Launch pr-reviewer to assess the branch for correctness, safety, and impact on existing features.\n</commentary>\n</example>\n\n<example>\nContext: The user is unsure whether a PR is safe to merge.\nuser: \"Will this PR break anything? It touches the auth middleware.\"\nassistant: \"I'll use the pr-reviewer agent to assess the impact of these changes on existing functionality.\"\n<commentary>\nSafety concern about a PR touching a critical area. Launch pr-reviewer to trace the impact and give a merge recommendation.\n</commentary>\n</example>\n\n<example>\nContext: The user wants to do a full review of an incoming PR.\nuser: \"Review this PR for me before I approve it — branch is fix/payment-webhook-retry.\"\nassistant: \"I'll launch the pr-reviewer agent to do a full review of that branch and give you a clear merge recommendation.\"\n<commentary>\nExplicit PR review request on a specific branch. Launch pr-reviewer.\n</commentary>\n</example>"
 model: inherit
 memory: user
 ---

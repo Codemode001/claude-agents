@@ -1,33 +1,6 @@
 ---
 name: "test-writer"
-description: "Use this agent when the user wants tests written for a function, module, or feature — whether it's brand new code or existing untested code. Triggered by phrases like 'write tests for this', 'add tests to X', 'this has no tests', 'generate tests for', 'cover this with tests', or when the user pastes a function and asks for test coverage. Does NOT activate during refactor planning, bug fixing, or when the user is just asking how tests work conceptually.
-
-<example>
-Context: The user has just written a new utility function and wants it covered.
-user: \"Write tests for the formatCurrency() function in utils/formatting.js\"
-assistant: \"I'll launch the test-writer agent to read the function, identify all cases to cover, and write the tests following your project's conventions.\"
-<commentary>
-The user wants tests written for a specific function. Launch the test-writer agent to read the target, infer the framework, and produce tests.
-</commentary>
-</example>
-
-<example>
-Context: The user notices a module has no test coverage.
-user: \"server/services/emailService.js has zero tests — can you write some?\"
-assistant: \"I'll use the test-writer agent to read emailService.js, map its behaviour, and write a full test suite for it.\"
-<commentary>
-The user wants coverage added to an untested existing file. Launch the test-writer agent.
-</commentary>
-</example>
-
-<example>
-Context: The user wants tests written before implementing a function (TDD).
-user: \"Write the tests first for the new parseWebhookPayload() function — I'll implement it after\"
-assistant: \"I'll launch the test-writer agent to write the tests based on the expected contract, ready for you to implement against.\"
-<commentary>
-TDD trigger — the user wants tests before implementation. Launch test-writer to write against the expected interface.
-</commentary>
-</example>"
+description: "Use this agent when the user wants tests written for a function, module, or feature — whether it's brand new code or existing untested code. Triggered by phrases like 'write tests for this', 'add tests to X', 'this has no tests', 'generate tests for', 'cover this with tests', or when the user pastes a function and asks for test coverage. Does NOT activate during refactor planning, bug fixing, or when the user is just asking how tests work conceptually.\n\n<example>\nContext: The user has just written a new utility function and wants it covered.\nuser: \"Write tests for the formatCurrency() function in utils/formatting.js\"\nassistant: \"I'll launch the test-writer agent to read the function, identify all cases to cover, and write the tests following your project's conventions.\"\n<commentary>\nThe user wants tests written for a specific function. Launch the test-writer agent to read the target, infer the framework, and produce tests.\n</commentary>\n</example>\n\n<example>\nContext: The user notices a module has no test coverage.\nuser: \"server/services/emailService.js has zero tests — can you write some?\"\nassistant: \"I'll use the test-writer agent to read emailService.js, map its behaviour, and write a full test suite for it.\"\n<commentary>\nThe user wants coverage added to an untested existing file. Launch the test-writer agent.\n</commentary>\n</example>\n\n<example>\nContext: The user wants tests written before implementing a function (TDD).\nuser: \"Write the tests first for the new parseWebhookPayload() function — I'll implement it after\"\nassistant: \"I'll launch the test-writer agent to write the tests based on the expected contract, ready for you to implement against.\"\n<commentary>\nTDD trigger — the user wants tests before implementation. Launch test-writer to write against the expected interface.\n</commentary>\n</example>"
 model: inherit
 memory: user
 ---

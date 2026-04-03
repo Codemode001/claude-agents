@@ -1,33 +1,6 @@
 ---
 name: "code-reviewer"
-description: "Use this agent when the user wants to review their own code before pushing or opening a PR. Triggered by phrases like 'review my code before I push', 'check my changes', 'is my code ready?', 'review what I've done', 'any issues before I push?', or when the user wants a self-review of their current working changes. This agent reviews YOUR OWN uncommitted or unpushed work. Does NOT activate for reviewing someone else's PR (use pr-reviewer), writing a PR description (use pr-writer), fixing bugs (use bug-surgeon), or planning refactors (use refactor-planner).
-
-<example>
-Context: The user has finished implementing a feature and wants to check their work before pushing.
-user: \"Review my changes before I push — I've been working on the payment retry logic.\"
-assistant: \"I'll launch the code-reviewer agent to go through your changes and give you a full pre-push review.\"
-<commentary>
-The user wants to review their own changes before pushing. Launch code-reviewer to diff their work and give a structured review.
-</commentary>
-</example>
-
-<example>
-Context: The user wants a sanity check on uncommitted work.
-user: \"Can you check my code? I want to make sure I haven't missed anything before I commit.\"
-assistant: \"I'll use the code-reviewer agent to review your uncommitted changes now.\"
-<commentary>
-Pre-commit self-review trigger. Launch code-reviewer.
-</commentary>
-</example>
-
-<example>
-Context: The user is unsure about a specific part of their implementation.
-user: \"Review server/services/authService.js — I rewrote the token refresh logic and want a second opinion.\"
-assistant: \"I'll launch the code-reviewer agent to do a full review of your changes to authService.js.\"
-<commentary>
-File-specific self-review. Launch code-reviewer focused on the specified file.
-</commentary>
-</example>"
+description: "Use this agent when the user wants to review their own code before pushing or opening a PR. Triggered by phrases like 'review my code before I push', 'check my changes', 'is my code ready?', 'review what I've done', 'any issues before I push?', or when the user wants a self-review of their current working changes. This agent reviews YOUR OWN uncommitted or unpushed work. Does NOT activate for reviewing someone else's PR (use pr-reviewer), writing a PR description (use pr-writer), fixing bugs (use bug-surgeon), or planning refactors (use refactor-planner).\n\n<example>\nContext: The user has finished implementing a feature and wants to check their work before pushing.\nuser: \"Review my changes before I push — I've been working on the payment retry logic.\"\nassistant: \"I'll launch the code-reviewer agent to go through your changes and give you a full pre-push review.\"\n<commentary>\nThe user wants to review their own changes before pushing. Launch code-reviewer to diff their work and give a structured review.\n</commentary>\n</example>\n\n<example>\nContext: The user wants a sanity check on uncommitted work.\nuser: \"Can you check my code? I want to make sure I haven't missed anything before I commit.\"\nassistant: \"I'll use the code-reviewer agent to review your uncommitted changes now.\"\n<commentary>\nPre-commit self-review trigger. Launch code-reviewer.\n</commentary>\n</example>\n\n<example>\nContext: The user is unsure about a specific part of their implementation.\nuser: \"Review server/services/authService.js — I rewrote the token refresh logic and want a second opinion.\"\nassistant: \"I'll launch the code-reviewer agent to do a full review of your changes to authService.js.\"\n<commentary>\nFile-specific self-review. Launch code-reviewer focused on the specified file.\n</commentary>\n</example>"
 model: inherit
 memory: user
 ---
